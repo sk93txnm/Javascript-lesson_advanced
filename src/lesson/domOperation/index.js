@@ -1,7 +1,13 @@
 import 'animate.css';
 
-// ここにコードを書きながら確認しましょう！
+const title = document.getElementById('title');
 
+
+console.log(title);
+
+const button = document.querySelector('.button');
+
+console.log(button); // <button id="button" type="button" class="button">animation</button>
 
 
 
