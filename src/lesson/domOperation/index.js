@@ -21,7 +21,7 @@ button.addEventListener('click', () => {
     },
     { once: true } // 1回だけ実行
   );
-});
+});     
 
 
 
