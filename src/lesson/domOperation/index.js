@@ -3,6 +3,8 @@ import 'animate.css';
 const title = document.getElementById('title');
 const button = document.querySelector('.button');
 const eventCard = document.querySelector('.card-type--yellow');
+const nodeCard = document.querySelector('.card-type--mocha');
+
 
 button.addEventListener('click', () => {
   // ① DOM Operation を落下（ぶら下がり）アニメーション
@@ -13,23 +15,16 @@ button.addEventListener('click', () => {
   title.addEventListener(
     'animationend',
     () => {
+
       // display: none → block に変更
       eventCard.style.display = 'block';
+      nodeCard.classList.add('card-animation');
 
       // 下からフェードインするアニメーションを付与
       eventCard.classList.add('animate__fadeInUp');
     },
     { once: true } // 1回だけ実行
   );
-});     
-
-
-
-
-
-
-
-
-
+});
 
 // ↑ 練習問題はここまで書いてきたコードに追記する形で実装してください。 ↑
