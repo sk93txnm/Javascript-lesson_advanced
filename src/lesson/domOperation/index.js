@@ -7,23 +7,15 @@ const nodeCard = document.querySelector('.card-type--mocha');
 
 
 button.addEventListener('click', () => {
-  // ① DOM Operation を落下（ぶら下がり）アニメーション
   title.classList.add('animate__hinge');
-
-
-  // ② アニメーション終了後に Event Type を表示
   title.addEventListener(
     'animationend',
     () => {
-
-      // display: none → block に変更
       eventCard.style.display = 'block';
       nodeCard.classList.add('card-animation');
-
-      // 下からフェードインするアニメーションを付与
       eventCard.classList.add('animate__fadeInUp');
     },
-    { once: true } // 1回だけ実行
+    { once: true }
   );
 });
 
