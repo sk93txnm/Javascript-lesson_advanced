@@ -106,12 +106,10 @@ const objectB = {
   version: 3,
 };
 
-const newObjectB = {
+const newObject = {
+  ...objectA,
   ...objectB,
   routingLibrary: 'Vue Router',
 };
 
-
-const object = { ...objectA, ...newObjectB };
-
-console.log(object);
+console.log(newObject);
