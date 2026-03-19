@@ -87,6 +87,8 @@ function arrayFn(array) {
   return[...array,...framework];
 }
 
+// 配列を展開[]
+
 console.log(arrayFn(packageManager));
 
 // 問題 2
@@ -111,5 +113,7 @@ const newObject = {
   ...objectB,
   routingLibrary: 'Vue Router',
 };
+
+// オブジェクトの中身順で展開される
 
 console.log(newObject);

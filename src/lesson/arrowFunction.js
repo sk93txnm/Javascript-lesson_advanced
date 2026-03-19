@@ -36,3 +36,5 @@
 const testFn = name => `Gizumo ${name}`;
 
 console.log(testFn('Karen'));
+
+// {} 処理が2個以上ある場合省略できない

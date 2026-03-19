@@ -5,6 +5,7 @@ const button = document.querySelector('.button');
 const eventCard = document.querySelector('.card-type--yellow');
 const nodeCard = document.querySelector('.card-type--mocha');
 
+// 違うファイルはdomで取得する
 
 button.addEventListener('click', () => {
   title.classList.add('animate__hinge');

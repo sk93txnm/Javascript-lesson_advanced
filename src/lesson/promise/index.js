@@ -129,10 +129,16 @@ const returnPromise = () => {
   });
 };
 
+
 returnPromise()
   .catch((error) => {
     console.log(error);
   });
 
+// returnPromiseはオブジェクト
+// .catchはオブジェクトとして返り値で返ってきている
+// なぜオブジェクト型{}でないのに、
+// .catchで返すことができるのか
 
+// new Promise()によって作成されたPromiseオブジェクトに、非同期処理が成功または失敗した時に呼ばれるメソッドが入っています。
 

@@ -44,3 +44,4 @@ const newArray = array.map(item => ({
 }));
 
 console.log(newArray);
+

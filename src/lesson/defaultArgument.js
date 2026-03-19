@@ -45,5 +45,5 @@ function discountRateCalc(price, rate =
   return Math.floor(price * (1 - rate * 0.01));
 }
 
-console.log(discountRateCalc(4500));
+console.log(discountRateCalc(4500,undefined));
 console.log(discountRateCalc(6000,20));

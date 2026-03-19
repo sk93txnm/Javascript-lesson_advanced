@@ -1,4 +1,4 @@
-/**
+document/**
  * エラーメッセージを表示するHTML要素を作成する関数
  * @param {string} message エラーメッセージ
  * @return {HTMLElement} DocumentFragmentオブジェクト
